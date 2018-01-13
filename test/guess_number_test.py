@@ -27,6 +27,9 @@ class CalculateResultTest(unittest.TestCase):
     def test_return_4A0B_when_1234(self):
         self.assertEqual(guess_number.calculate_result('1234', self.ACTUAL_NUMBER), (4, 0))
 
+    def test_return_3A0B_when_1235(self):
+        self.assertEqual(guess_number.calculate_result('1235', self.ACTUAL_NUMBER), (3, 0))
+
 
 if __name__ == '__main__':
     unittest.main()

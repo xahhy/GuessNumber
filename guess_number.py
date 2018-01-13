@@ -23,5 +23,10 @@ def is_input_legal(input_string:string):
 
 
 def calculate_result(input_string, expect_string):
-    if(input_string == expect_string):
-        return (4, 0)
+    A, B = 0, 0
+    for index,number in enumerate(input_string):
+        if number == expect_string[index]:
+            A += 1
+        elif number in expect_string:
+            B += 1
+    return A, B
