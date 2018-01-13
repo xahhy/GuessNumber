@@ -30,6 +30,12 @@ class CalculateResultTest(unittest.TestCase):
     def test_return_3A0B_when_1235(self):
         self.assertEqual(guess_number.calculate_result('1235', self.ACTUAL_NUMBER), (3, 0))
 
+    def test_return_0A4B_when_4321(self):
+        self.assertEqual(guess_number.calculate_result('4321', self.ACTUAL_NUMBER), (0, 4))
+
+    def test_return_0A4B_when_1243(self):
+        self.assertEqual(guess_number.calculate_result('1243', self.ACTUAL_NUMBER), (2, 2))
+
 
 if __name__ == '__main__':
     unittest.main()
