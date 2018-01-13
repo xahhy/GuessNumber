@@ -15,6 +15,9 @@ class GuessSystemTest(unittest.TestCase):
     def test_return_false_when_input_is_12ab(self):
         self.assertEqual(guess_number.is_input_legal("12ab"), (False,guess_number.INPUT_NOT_NUMBERS))
 
+    def test_return_true_when_input_is_1234(self):
+        self.assertEqual(guess_number.is_input_legal("1234"), (True,guess_number.INPUT_LEGAL))
+
 
 if __name__ == '__main__':
     unittest.main()
