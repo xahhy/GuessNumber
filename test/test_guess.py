@@ -5,7 +5,7 @@ from guess import Guess
 class GuessTest(unittest.TestCase):
     def setUp(self):
         self.Guess = Guess()
-        self.Guess.answer = '1234'
+        self.Guess._answer = '1234'
         
     def test_return_4A0B_when_1234(self):
         self.assertEqual(self.Guess.guess('1234'), '4A0B')
