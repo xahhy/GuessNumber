@@ -2,5 +2,7 @@ language: python
 python:
   - "3.6"
   - "nightly"
+before_script:
+  - chmod +x -r ./.travis
 script:
   - ./.travis/run.sh
