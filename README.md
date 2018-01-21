@@ -1,4 +1,5 @@
 # 猜数字游戏（命令行版本）
+[![Build Status](https://www.travis-ci.org/xahhy/GuessNumber.svg?branch=master)](https://www.travis-ci.org/xahhy/GuessNumber)
 ## 安装依赖
 - python3以上(建议python3.5或3.6)
 ## 测试方法
