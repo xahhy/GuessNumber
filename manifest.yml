@@ -1,5 +1,5 @@
 ---
-applecations:
+applications:
 - name: guess-number
   memory: 512M
   instances: 1
